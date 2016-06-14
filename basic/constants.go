@@ -11,6 +11,6 @@ func main() {
     const World = "世界"
     fmt.Println("Hello", World)
     fmt.Println("Happy", Pi, "Day")
-    const Truth = ture
+    const Truth = true
     fmt.Println("Go rules?", Truth)
 }
