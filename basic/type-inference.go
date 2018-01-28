@@ -9,10 +9,12 @@
 * f := 3.142        // float64
 * g := 0.867 + 0.5i // complex128
 * 尝试修改演示代码中 v 的初始值，并观察这是如何影响其类型的。
-*/
+ */
 package main
+
 import "fmt"
+
 func main() {
-    v := 42
-    fmt.Printf("v is of type %T\n", v)
+	v := 42
+	fmt.Printf("v is of type %T\n", v)
 }

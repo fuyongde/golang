@@ -11,20 +11,21 @@
 * float32 float64
 * complex64 complex128
 * 这个例子演示了具有不同类型的变量。 同时与导入语句一样，变量的定义“打包”在一个语法块中。
-*/
+ */
 package main
+
 import "fmt"
 import "math/cmplx"
 
 var (
-    ToBe bool = false
-    MaxInt uint64 = 1 << 64 - 1
-    z complex128 = cmplx.Sqrt(-5 + 12i)
+	ToBe   bool       = false
+	MaxInt uint64     = 1<<64 - 1
+	z      complex128 = cmplx.Sqrt(-5 + 12i)
 )
 
 func main() {
-    const f = "%T(%v)\n"
-    fmt.Println(f, ToBe, ToBe)
-    fmt.Println(f, MaxInt, MaxInt)
-    fmt.Println(f, z, z)
+	const f = "%T(%v)\n"
+	fmt.Println(f, ToBe, ToBe)
+	fmt.Println(f, MaxInt, MaxInt)
+	fmt.Println(f, z, z)
 }
